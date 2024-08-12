@@ -1,38 +1,15 @@
-Text Report on Changes on conftest.py
-Variable Name Changes:
+# Description of Changes Made
 
-Renamed NOT_DEVICE_TESTS to NON_DEVICE_TESTS for clarity.
-Comment Updates:
+1. **Testing Methodology on New Datasets**
 
-Updated comments to be more descriptive and align with the changes.
-Path Variable Renaming:
+   We applied the methodology from the selected research paper to a variety of new datasets. This step was crucial for evaluating the effectiveness of the methodology in different contexts beyond the original study. By testing on diverse datasets, we assessed whether the methodology maintains its performance and reliability across various types of data. This approach validated the robustness of the methodology and ensured its generalizability to different scenarios.
 
-Renamed git_repo_path to source_code_path for better understanding.
-Documentation and Clarity:
+2. **Experimenting with Model Parameters**
 
-Updated comments to be more descriptive.
-Clarified the purpose of various configurations and settings.
-Suppress FutureWarnings:
+   We conducted a series of experiments by adjusting several model parameters to create an upgraded version of the existing methodology. By altering parameters such as learning rates, regularization strengths, and other hyperparameters, we explored how these changes impact the model’s performance. This process allowed us to identify configurations that enhance the model’s efficiency and effectiveness, providing valuable insights into optimizing the existing methodology.
 
-Confirmed the existing suppression of FutureWarning remains unchanged.
-Functionality:
+3. **Introducing an Additional Model**
 
-Ensured all functional aspects of the code are preserved, including pytest configuration, test collection modifications, and doctest handling.
-These changes are intended to enhance code readability and maintainability without altering its functionality.
----------------------------------------------------------------------------------------------------------------
-Text Report on Changes on hubconf.py
-Comment and Documentation Updates:
+   We expanded the scope of our analysis by introducing a new model to the experimentation process. Specifically, we incorporated a Multiple Linear Perceptron (MLP) alongside the original models (e.g., Random Forest and Decision Trees) used in the paper. By comparing the performance of the MLP with the existing models, we evaluated whether the addition of this model contributed to improved performance. This step was instrumental in determining if the new model offered any enhancements and provided a broader perspective on the potential benefits of different modeling approaches in the given context.
 
-Updated docstrings to provide clearer explanations and improve readability.
-Standardized comments for consistency in style and content.
-Variable Names:
-
-Maintained original variable names for consistency with existing code but adjusted comments and docstrings for clarity.
-Code Formatting:
-
-Reformatted docstrings to ensure consistent indentation and readability.
-Ensured that each function’s docstring provides a clear and concise description of its purpose and usage.
-Function Documentation:
-
-Added explicit descriptions in docstrings about how to use torch.hub to load different components like configuration, tokenizer, and models.
-Included assertions within docstrings to verify configurations
+These changes were aimed at thoroughly evaluating and refining the methodology to achieve better performance and insights.
